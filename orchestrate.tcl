@@ -5,6 +5,7 @@ catch {console show};
 
 puts "Tcl/Goobernetes task orchestrator monolith";
 
+# My stupid over-engineered toy way to store yt-dlp arguments.
 proc yt-dlp-args {} {
 	set str	"";
 	set 0 {-x};
@@ -34,6 +35,7 @@ proc get-batchfile {} {
 	puts "ToDo";
 };
 
+# Run the yt-dlp command with all the necessary arguments.
 proc yt-dlp {uri} {
 	set args "";
 	foreach arg [yt-dlp-args] {
@@ -54,3 +56,7 @@ proc yt-dlp {uri} {
 # yt-dlp "https://www.youtube.com/watch?v=8e63d7yW-qg";
 # yt-dlp "https://www.youtube.com/watch?v=9LoEL_SHcn4";
 yt-dlp "https://www.youtube.com/watch?v=VOzO5U576iM";
+
+# Copyleft LVSA 10.2024
+# Terms of Use:
+# 1. Don't force me to pay 25.99PLN monthly to listen to my fucking music.
